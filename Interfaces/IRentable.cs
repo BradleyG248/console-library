@@ -3,13 +3,11 @@ namespace library.Interfaces
   interface IRentable
   {
     bool CheckedOut { get; set; }
-    void CheckOut(IRentable obj)
+    void CheckOut()
     {
-      obj.CheckedOut = true;
     }
-    void Return(IRentable obj)
+    void Return()
     {
-      obj.CheckedOut = false;
     }
   }
 }
